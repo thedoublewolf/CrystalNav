@@ -1,1 +1,49 @@
 @import "bootstrap";
+
+body {
+  background: #2B2B2B;
+  font-size: 62.5%;
+}
+
+.container {
+  margin-top: 150px;
+  text-align: center;
+}
+
+// .crystal-whole {
+//   min-width: 200px;
+//   max-width: 20%;
+//   display: none;
+// }
+
+.shard-group {
+  margin: 0 auto;
+  position: relative;
+  width: 200px;
+  height: 500px;
+  .crystal-shard {
+    position: absolute;
+    min-width: 200px;
+    max-width: 20%;
+    left: 0px;
+  }
+  .shards {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  .shards:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .orb {
+    position: absolute;
+    background: white;
+    box-shadow: 0 0 55px white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    left: 45px;
+    top: 250px;
+    z-index: -1;
+  }
+}
