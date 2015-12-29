@@ -10,6 +10,20 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 require('bootstrap-sass');
 
+(0, _jquery2['default'])('.shards').click(function () {
+  (0, _jquery2['default'])('#shard-group').fadeToggle(200, function () {
+    (0, _jquery2['default'])('#shard-group').addClass('hidden').removeClass('active');
+    (0, _jquery2['default'])('#shard-seperate').addClass('active').removeClass('hidden');
+  });
+});
+
+(0, _jquery2['default'])('.shard-1').mouseover(function () {
+  (0, _jquery2['default'])('#desc-1').toggleClass('active').toggleClass('hidden');
+});
+(0, _jquery2['default'])('.shard-1').mouseleave(function () {
+  (0, _jquery2['default'])('#desc-1').toggleClass('active').toggleClass('hidden');
+});
+
 },{"bootstrap-sass":2,"jquery":3}],2:[function(require,module,exports){
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
